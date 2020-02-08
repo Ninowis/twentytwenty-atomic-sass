@@ -1,27 +1,30 @@
 {
-	"name": "twentytwenty",
-	"version": "1.0.0",
-	"description": "Default WP Theme",
-	"author": "The WordPress Contributors",
+	"name": "twentytwenty-atomic-sass",
+	"version": "0.0.1",
+	"description": "Fork of the official default WP Theme",
+	"author": "Guillaume Simonin",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",
 		"Theme",
-		"TwentyTwenty"
+		"TwentyTwenty",
+		"Atomic design",
+		"Atomic css"
 	],
-	"homepage": "https://github.com/wordpress/twentytwenty#readme",
+	"homepage": "https://github.com/Ninowis/twentytwenty-atomic-sass#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/wordpress/twentytwenty.git"
+		"url": "git+https://github.com/Ninowis/twentytwenty-atomic-sass.git"
 	},
 	"bugs": {
-		"url": "https://github.com/wordpress/twentytwenty/issues"
+		"url": "https://github.com/Ninowis/twentytwenty-atomic-sass/issues"
 	},
 	"devDependencies": {
 		"@wordpress/browserslist-config": "^2.6.0",
 		"@wordpress/scripts": "^5.0.0",
 		"autoprefixer": "^9.6.1",
 		"concurrently": "^4.1.2",
+		"node-sass": "^4.13.1",
 		"postcss-cli": "^6.1.3",
 		"rtlcss": "^2.4.0",
 		"stylelint-a11y": "^1.2.1"
@@ -43,11 +46,12 @@
 		"map": false
 	},
 	"scripts": {
-		"build": "npm run build:vendor-prefixes && npm run build:rtl",
+		"build": "npm run build:style && npm run build:vendor-prefixes && npm run build:rtl",
 		"build:rtl": "concurrently \"npm run build:rtl-style\" \"npm run build:rtl-esb\" \"npm run build:rtl-esc\"",
 		"build:rtl-style": "rtlcss style.css style-rtl.css",
 		"build:rtl-esb": "rtlcss assets/css/editor-style-block.css assets/css/editor-style-block-rtl.css",
 		"build:rtl-esc": "rtlcss assets/css/editor-style-classic.css assets/css/editor-style-classic-rtl.css",
+		"build:style": "node-sass sass/style.scss style.css --indent-type tab --indent-width 1 --output-style expanded && postcss -r style.css",
 		"build:vendor-prefixes": "concurrently \"npm run build:vendor-prefixes-style\" \"npm run build:vendor-prefixes-esb\" \"npm run build:vendor-prefixes-esc\"",
 		"build:vendor-prefixes-style": "postcss -r --no-map style.css assets/css/editor-style-block.css assets/css/editor-style-classic.css",
 		"build:vendor-prefixes-esb": "postcss -r --no-map assets/css/editor-style-block.css ",
