@@ -10,7 +10,7 @@ https://core.trac.wordpress.org/search?q=twenty+twenty%3A
 **Theme URI:** https://wordpress.org/themes/twentytwenty/  
 **Contributors:** the WordPress team  
 **Requires at least:** WordPress 4.7  
-**Version:** 1.0  
+**Version:** 1.1  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 **Tags:** blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
@@ -65,7 +65,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Source: WordPress Social Link Block (See wp-includes\blocks\social-link.php)
 
 Code from Twenty Nineteen  
-Copyright (c) 2018 WordPress.org  
+Copyright (c) 2018-2019 WordPress.org  
 License: GPLv2  
 Source: https://wordpress.org/themes/twentynineteen/  
 Included as part of the following classes and functions:  
@@ -75,7 +75,7 @@ Included as part of the following classes and functions:
 - twentytwenty_nav_menu_social_icons()  
 
 Code from Twenty Seventeen  
-Copyright (c) 2016 WordPress.org  
+Copyright (c) 2016-2019 WordPress.org  
 License: GPLv2  
 Source: https://wordpress.org/themes/twentyseventeen/  
 Included as part of the following classes and functions:  
