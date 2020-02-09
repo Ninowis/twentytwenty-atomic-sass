@@ -1,6 +1,4 @@
 
-/* Code -------------------------------------- */
-
 code,
 kbd,
 pre,
@@ -24,9 +22,9 @@ pre {
 	overflow: auto;
 	padding: 3rem 2rem;
 	text-align: left;
-}
 
-pre code {
-	background: transparent;
-	padding: 0;
+	code {
+		background: transparent;
+		padding: 0;
+	}
 }

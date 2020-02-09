@@ -1,23 +1,19 @@
 
-
-/* Cover Modals ------------------------------ */
-
 .cover-modal {
 	display: none;
 	-ms-overflow-style: none;
 	overflow: -moz-scrollbars-none;
-}
 
-.cover-modal::-webkit-scrollbar {
-	display: none !important;
-}
+	&::-webkit-scrollbar {
+		display: none !important;
+	}
 
-.cover-modal.show-modal {
-	display: block;
-	cursor: pointer;
-}
+	&.show-modal {
+		display: block;
+		cursor: pointer;
 
-.cover-modal.show-modal > * {
-	cursor: default;
+		> * {
+			cursor: default;
+		}
+	}
 }
-

@@ -1,6 +1,4 @@
 
-/* Sections ---------------------------------- */
-
 section {
 	padding: 5rem 0;
 	width: 100%;
@@ -11,24 +9,24 @@ section {
 	margin-right: auto;
 	max-width: 120rem;
 	width: calc(100% - 4rem);
-}
 
-.section-inner.max-percentage {
-	width: 100%;
-}
+	&.max-percentage {
+		width: 100%;
+	}
 
-.section-inner.thin {
-	max-width: 58rem;
-}
+	&.thin {
+		max-width: 58rem;
+	}
 
-.section-inner.small {
-	max-width: 80rem;
-}
+	&.small {
+		max-width: 80rem;
+	}
 
-.section-inner.medium {
-	max-width: 100rem;
-}
-
-.section-inner.no-margin {
-	margin: 0;
+	&.medium {
+		max-width: 100rem;
+	}
+	
+	&.no-margin {
+		margin: 0;
+	}
 }

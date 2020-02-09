@@ -1,45 +1,49 @@
-
 /* -------------------------------------------------------------------------- */
-
 /*	13. Site Pagination
 /* -------------------------------------------------------------------------- */
 
+.pagination {
 
-.pagination .nav-links {
-	align-items: baseline;
-	display: flex;
-	flex-wrap: wrap;
-	font-size: 1.8rem;
-	font-weight: 600;
-	margin: -1.5rem 0 0 -2.5rem;
-	width: calc(100% + 2.5rem);
+	.nav-links {
+		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 1.8rem;
+		font-weight: 600;
+		margin: -1.5rem 0 0 -2.5rem;
+		width: calc(100% + 2.5rem);
+	}
+
+	&-separator {
+		margin: 5rem 0;
+	}
+
+	a {
+		text-decoration: none;
+
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.dots {
+		transform: translateY(-0.3em);
+		color: #6d6d6d;
+	}
 }
 
-.pagination-separator {
-	margin: 5rem 0;
-}
 
-.nav-links > * {
-	margin: 1.5rem 0 0 2.5rem;
-}
+.nav-links {
 
-.nav-links .placeholder {
-	display: none;
-	visibility: hidden;
-}
+	> * {
+		margin: 1.5rem 0 0 2.5rem;
+	}
 
-.pagination a {
-	text-decoration: none;
-}
-
-.pagination a:focus,
-.pagination a:hover {
-	text-decoration: underline;
-}
-
-.pagination .dots {
-	transform: translateY(-0.3em);
-	color: #6d6d6d;
+	.placeholder {
+		display: none;
+		visibility: hidden;
+	}
 }
 
 .nav-short {

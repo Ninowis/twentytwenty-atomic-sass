@@ -1,6 +1,4 @@
 
-/* Media ------------------------------------- */
-
 figure {
 	display: block;
 	margin: 0;
@@ -32,11 +30,10 @@ figcaption,
 	font-weight: 500;
 	line-height: 1.2;
 	margin-top: 1.5rem;
-}
 
-figcaption a,
-.wp-caption-text a {
-	color: inherit;
+	a {
+		color: inherit;
+	}
 }
 
 blockquote.instagram-media,

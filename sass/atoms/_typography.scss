@@ -60,13 +60,13 @@ dfn {
 	font-style: italic;
 }
 
-em em,
-em i,
-i em,
-i i,
-cite em,
-cite i {
-	font-weight: bolder;
+em,
+i,
+cite {
+	em,
+	i {
+		font-weight: bolder;
+	}
 }
 
 big {
@@ -127,6 +127,26 @@ hr.styled-separator {
 	height: 0.1rem;
 	overflow: visible;
 	position: relative;
+
+	&::before,
+	&::after {
+		background: currentColor;
+		content: "";
+		display: block;
+		height: 1.6rem;
+		position: absolute;
+		top: calc(50% - 0.8rem);
+		transform: rotate(22.5deg);
+		width: 0.1rem;
+	}
+
+	&::before {
+		left: calc(50% - 0.5rem);
+	}
+
+	&::after {
+		right: calc(50% - 0.5rem);
+	}
 }
 
 .entry-content hr:not(.has-background),
@@ -134,36 +154,12 @@ hr.styled-separator {
 	color: #6d6d6d;
 }
 
-.entry-content hr::before,
-.entry-content hr::after,
-hr.styled-separator::before,
-hr.styled-separator::after {
-	background: currentColor;
-	content: "";
-	display: block;
-	height: 1.6rem;
-	position: absolute;
-	top: calc(50% - 0.8rem);
-	transform: rotate(22.5deg);
-	width: 0.1rem;
-}
-
-.entry-content hr::before,
-hr.styled-separator::before {
-	left: calc(50% - 0.5rem);
-}
-
-.entry-content hr::after,
-hr.styled-separator::after {
-	right: calc(50% - 0.5rem);
-}
-
 a {
 	color: #cd2653;
 	text-decoration: underline;
-}
 
-a:hover,
-a:focus {
-	text-decoration: none;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
 }
