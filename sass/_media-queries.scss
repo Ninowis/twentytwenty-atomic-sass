@@ -861,7 +861,7 @@
 		margin-top: 8rem;
 	}
 
-	.comment-reply-title {
+	.comment-respond .comment-reply-title {
 		margin-bottom: 4.6rem;
 	}
 
@@ -879,7 +879,7 @@
 		padding-top: 5rem;
 	}
 
-	div.comment:first-of-type {
+	.comments .comment:first-of-type {
 		margin-top: 5rem;
 	}
 
@@ -945,7 +945,7 @@
 		padding: 5rem 0 0;
 	}
 
-	.comment-reply-title small {
+	.comment-respond .comment-reply-title small {
 		display: inline;
 		margin: 0 0 0 0.5rem;
 	}
@@ -1663,7 +1663,7 @@
 
 	/* Comments ------------------------------ */
 
-	.comment-reply-title {
+	.comment-respond .comment-reply-title {
 		font-size: 5.6rem;
 		line-height: 1.2;
 		margin-bottom: 6rem;

@@ -1,0 +1,103 @@
+/**
+ * The reply form under a comment or series of comments
+ *
+ * @group Molecules
+ * @components
+		atoms/inputs,
+		atoms/typography
+ */
+
+.comment-respond {
+
+	&::after {
+		clear: both;
+		content: "";
+		display: block;
+	}
+
+	// Cancel reply link next to title
+	.comment-reply-title small {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 600;
+		letter-spacing: -0.0277em;
+		margin: 0.5rem 0 0 0;
+		white-space: nowrap;
+
+		a {
+			text-decoration: none;
+
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	.comment-notes,
+	.logged-in-as {
+		color: #6d6d6d;
+		font-size: 1.6rem;
+		line-height: 1.4;
+		margin: -3rem 0 4rem 0;
+		text-align: center;
+
+		a {
+			color: inherit;
+			text-decoration: none;
+
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	p {
+		line-height: 1.1;
+		margin-bottom: 2rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		&:not(.comment-notes) {
+			max-width: 58rem;
+		}
+	}
+
+	> p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	label {
+		display: block;
+	}
+
+	input[type="checkbox"] + label {
+		font-size: 1.5rem;
+		line-height: 1.25;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		margin-bottom: 0;
+	}
+
+	textarea {
+		height: 15rem;
+	}
+
+	#submit {
+		display: block;
+	}
+
+	.comments-closed {
+		text-align: center;
+	}
+
+	.comment-form-cookies-consent {
+		align-items: baseline;
+		display: flex;
+	}
+
+}
