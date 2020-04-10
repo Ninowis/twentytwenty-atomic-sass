@@ -1,9 +1,13 @@
-
-/* -------------------------------------------------------------------------- */
-
-/*	11. Entry Content
-/* -------------------------------------------------------------------------- */
-
+/**
+ * Global layouts and styles for contents within that microformat container
+ *
+ * @group Templates
+ * @components
+		atoms/lists,
+		atoms/media,
+		atoms/quotes,
+		atoms/typography
+ */
 
 .entry-content {
 	line-height: 1.5;

@@ -1,4 +1,11 @@
-
+/**
+ * A generic class for a gallery of items
+ * (i.e. in gallery widget)
+ *
+ * @group Molecules
+ * @components
+		atoms/{any}
+ */
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -10,7 +17,7 @@
 		padding: 0 0.8em;
 		width: 100%;
 	}
-	
+
 	&-caption {
 		display: block;
 		margin-top: 0.8em;

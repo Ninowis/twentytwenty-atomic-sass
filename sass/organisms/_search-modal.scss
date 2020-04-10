@@ -1,9 +1,12 @@
-
-/* -------------------------------------------------------------------------- */
-
-/*	6. Search Modal
-/* -------------------------------------------------------------------------- */
-
+/**
+ * The modal search bar triggered from the header
+ *
+ * @group Molecules
+ * @components
+		atoms/inputs,
+		molecules/cover-modal,
+		molecules/search-form
+ */
 
 .search-modal {
 	background: rgba(0, 0, 0, 0.2);

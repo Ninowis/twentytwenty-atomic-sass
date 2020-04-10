@@ -24,58 +24,47 @@ with others.
 @import "core/reset";
 @import "core/document";
 @import "core/fonts";
+@import "core/helpers.accessibility";
 @import "core/helpers.backgrounds";
 @import "core/helpers.colours";
 @import "core/helpers.javascript";
 @import "core/helpers.layout";
 @import "core/helpers.typography";
 
-@import "atoms/screen-reader-text";
-@import "atoms/skip-link";
 @import "atoms/main";
 @import "atoms/typography";
 @import "atoms/lists";
 @import "atoms/quotes";
 @import "atoms/code";
 @import "atoms/media";
-
-@import "molecules/gallery";
-
 @import "atoms/inputs";
 @import "atoms/tables";
 @import "atoms/sections";
 
-@import "molecules/toggle";
-
+@import "molecules/author-bio";
+@import "molecules/blocks";
+@import "molecules/cover-modal";
+@import "molecules/gallery";
+@import "molecules/pagination-single";
+@import "molecules/pagination";
+@import "molecules/primary-menu";
 @import "molecules/search-form";
 @import "molecules/social-icons";
-@import "molecules/cover-modal";
+@import "molecules/toggle";
 
+@import "organisms/comments";
 @import "organisms/header";
-
-@import "molecules/primary-menu";
-
+@import "organisms/footer";
 @import "organisms/menu-modal";
 @import "organisms/search-modal";
+@import "organisms/widgets";
 
 @import "templates/page.cover";
 @import "templates/page.full-width";
 @import "templates/post.archive";
 @import "templates/post.single";
-
-@import "molecules/author-bio";
-@import "molecules/pagination-single";
-@import "molecules/blocks";
-
-@import "organisms/entry-content";
-@import "organisms/comments";
-
-@import "molecules/pagination";
+@import "templates/entry-content";
 
 @import "pages/error.404";
-
-@import "molecules/widgets";
-
-@import "organisms/footer";
 
 @import "media-queries";

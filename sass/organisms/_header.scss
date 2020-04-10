@@ -1,10 +1,12 @@
-
-/* -------------------------------------------------------------------------- */
-
-/*	4.	Site Header
-/* -------------------------------------------------------------------------- */
-
-
+/**
+ * Clickable background overlay cover to close modals
+ *
+ * @group Molecules
+ * @components
+		atoms/typography,
+		molecules/search-form,
+		molecules/toggle
+ */
 #site-header {
 	background: #fff;
 	position: relative;

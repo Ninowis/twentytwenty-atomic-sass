@@ -1,9 +1,13 @@
-
-/* -------------------------------------------------------------------------- */
-
-/*	5. Menu Modal
-/* -------------------------------------------------------------------------- */
-
+/**
+ * The modal navigation menu triggered from the header
+ *
+ * @group Molecules
+ * @components
+		atoms/lists,
+		atoms/typography,
+		molecules/cover-modal,
+		molecules/toggle
+ */
 
 .menu-modal {
 	background: #fff;
