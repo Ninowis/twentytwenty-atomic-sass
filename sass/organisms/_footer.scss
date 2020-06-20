@@ -1,9 +1,11 @@
-
-/* -------------------------------------------------------------------------- */
-
-/*	16. Site Footer
-/* -------------------------------------------------------------------------- */
-
+/**
+ * Site footer
+ *
+ * @group Organisms
+ * @components
+		atoms/typography,
+		molecules/social-icons
+ */
 
 .footer-nav-widgets-wrapper,
 #site-footer {
@@ -16,11 +18,10 @@
 .footer-top-visible .footer-nav-widgets-wrapper,
 .footer-top-hidden #site-footer {
 	margin-top: 5rem;
-}
 
-.reduced-spacing.footer-top-visible .footer-nav-widgets-wrapper,
-.reduced-spacing.footer-top-hidden #site-footer {
-	border-top-width: 0.1rem;
+	@at-root .reduced-spacing#{&} {
+		border-top-width: 0.1rem;
+	}
 }
 
 .footer-top,
@@ -29,127 +30,125 @@
 	padding: 3rem 0;
 }
 
-
-/* Footer Top -------------------------------- */
-
 .footer-top {
 	display: flex;
 	border-bottom: 0.1rem solid #dedfdf;
 	justify-content: space-between;
+
+	@at-root .footer-menu {
+		font-size: 1.8rem;
+		font-weight: 700;
+		letter-spacing: -0.0277em;
+
+		li {
+			line-height: 1.25;
+			margin: 0.25em 0 0 0;
+		}
+
+		a {
+			text-decoration: none;
+
+			&:hover,
+			&:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	@at-root .footer-social {
+
+		&-wrapper {
+			margin: 0;
+			width: 100%;
+
+			.has-footer-menu & {
+				flex-shrink: 0;
+				margin-left: 1rem;
+				width: 50%;
+			}
+		}
+
+		@at-root ul#{&} {
+			margin: -0.5rem 0 0 -0.5rem;
+
+			li {
+				margin: 0.5rem 0 0 0.5rem;
+			}
+		}
+
+		.has-footer-menu & {
+			justify-content: flex-end;
+		}
+
+		a {
+			background-color: #cd2653;
+			height: 3.6rem;
+			width: 3.6rem;
+
+			&::before {
+				font-size: 1.6rem;
+			}
+		}
+	}
 }
 
-/* FOOTER MENU */
-
-.footer-menu {
-	font-size: 1.8rem;
-	font-weight: 700;
-	letter-spacing: -0.0277em;
+.footer-widgets {
+	&-outer-wrapper {
+		border-bottom: 0.1rem solid #dedfdf;
+	}
+	+ .footer-widgets {
+		margin-top: 3rem;
+	}
 }
 
-.footer-menu li {
-	line-height: 1.25;
-	margin: 0.25em 0 0 0;
-}
-
-.footer-menu a {
-	text-decoration: none;
-}
-
-.footer-menu a:hover,
-.footer-menu a:focus {
-	text-decoration: underline;
-}
-
-/* FOOTER SOCIAL */
-
-.footer-social-wrapper {
-	margin: 0;
-	width: 100%;
-}
-
-.has-footer-menu .footer-social-wrapper {
-	flex-shrink: 0;
-	margin-left: 1rem;
-	width: 50%;
-}
-
-ul.footer-social {
-	margin: -0.5rem 0 0 -0.5rem;
-}
-
-.has-footer-menu .footer-social {
-	justify-content: flex-end;
-}
-
-ul.footer-social li {
-	margin: 0.5rem 0 0 0.5rem;
-}
-
-.footer-social a {
-	background-color: #cd2653;
-	height: 3.6rem;
-	width: 3.6rem;
-}
-
-.footer-social a::before {
-	font-size: 1.6rem;
-}
-
-/* Footer Widgets ---------------------------- */
-
-.footer-widgets-outer-wrapper {
-	border-bottom: 0.1rem solid #dedfdf;
-}
-
-.footer-widgets + .footer-widgets {
-	margin-top: 3rem;
-}
-
-/* Footer Bottom ----------------------------- */
-
+// Footer Bottom
 #site-footer {
 	font-size: 1.6rem;
-}
 
-#site-footer .section-inner {
-	align-items: baseline;
-	display: flex;
-	justify-content: space-between;
-}
+	.section-inner {
+		align-items: baseline;
+		display: flex;
+		justify-content: space-between;
+	}
 
-#site-footer a {
-	text-decoration: none;
-}
+	a {
+		text-decoration: none;
 
-#site-footer a:focus,
-#site-footer a:hover {
-	text-decoration: underline;
-}
+		&:focus,
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 
-.footer-copyright a,
-.powered-by-wordpress a {
-	color: inherit;
-}
+	@at-root {
+		.footer-copyright,
+		.powered-by-wordpress {
+			a {
+				color: inherit;
+			}
+		}
 
-.powered-by-wordpress,
-.to-the-top {
-	color: #6d6d6d;
-}
+		.footer-copyright {
+			font-weight: 600;
+			margin: 0;
+		}
 
-a.to-the-top > * {
-	pointer-events: none;
-}
+		.powered-by-wordpress {
+			display: none;
+			margin: 0 0 0 2.4rem;
+			color: #6d6d6d;
+		}
 
-.footer-copyright {
-	font-weight: 600;
-	margin: 0;
-}
+		.to-the-top {
+			color: #6d6d6d;
 
-.powered-by-wordpress {
-	display: none;
-	margin: 0 0 0 2.4rem;
-}
+			@at-root a#{&} > * {
+				pointer-events: none;
+			}
 
-.to-the-top-long {
-	display: none;
+			&-long {
+				display: none;
+			}
+		}
+	}
 }

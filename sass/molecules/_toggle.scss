@@ -6,6 +6,7 @@
  * @components
 		atoms/inputs
  */
+
 .toggle {
 	-moz-appearance: none;
 	-webkit-appearance: none;
@@ -20,16 +21,39 @@
 	-ms-user-select: none;
 	text-align: inherit;
 	user-select: none;
-}
 
-button.toggle {
-	background: none;
-	border: none;
-	box-shadow: none;
-	border-radius: 0;
-	font-size: inherit;
-	font-weight: 400;
-	letter-spacing: inherit;
-	padding: 0;
-	text-transform: none;
+	@at-root button#{&} {
+		background: none;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		font-size: inherit;
+		font-weight: 400;
+		letter-spacing: inherit;
+		padding: 0;
+		text-transform: none;
+	}
+
+	&-inner {
+		display: flex;
+		justify-content: center;
+		height: 2.3rem;
+		position: relative;
+
+		.toggle-text {
+			color: #6d6d6d;
+			font-size: 1rem;
+			font-weight: 600;
+			position: absolute;
+			top: calc(100% + 0.5rem);
+			width: auto;
+			white-space: nowrap;
+			word-break: break-all;
+		}
+	}
+
+	&-icon {
+		display: block;
+		overflow: hidden;
+	}
 }
