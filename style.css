@@ -4145,15 +4145,17 @@ h2.entry-title {
 	width: calc(100% - 4rem);
 }
 
-/* -------------------------------------------------------------------------- */
-/*	14. Error 404
-/* -------------------------------------------------------------------------- */
-.error404 #site-content {
-	padding-top: 4rem;
-}
-
+/**
+ * 404 error page
+ *
+ * @group Pages
+ */
 .error404-content {
 	text-align: center;
+}
+
+.error404 #site-content {
+	padding-top: 4rem;
 }
 
 .error404 #site-content .search-form {

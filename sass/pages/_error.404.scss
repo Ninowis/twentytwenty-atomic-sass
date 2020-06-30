@@ -1,19 +1,20 @@
+/**
+ * 404 error page
+ *
+ * @group Pages
+ */
 
-/* -------------------------------------------------------------------------- */
+.error404 {
+	&-content {
+		text-align: center;
+	}
 
-/*	14. Error 404
-/* -------------------------------------------------------------------------- */
+	#site-content {
+		padding-top: 4rem;
 
-
-.error404 #site-content {
-	padding-top: 4rem;
-}
-
-.error404-content {
-	text-align: center;
-}
-
-.error404 #site-content .search-form {
-	justify-content: center;
-	margin-top: 3rem;
+		.search-form {
+			justify-content: center;
+			margin-top: 3rem;
+		}
+	}
 }
