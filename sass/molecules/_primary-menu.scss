@@ -1,19 +1,28 @@
-
-.primary-menu-wrapper {
-	display: none;
-}
-
-ul.primary-menu {
-	display: flex;
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: -0.0277em;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	margin: -0.8rem 0 0 -1.6rem;
-}
+/**
+ * The main menu in the header
+ *
+ * @group Molecules
+ * @components
+		atoms/lists,
+		atoms/typography
+ */
 
 .primary-menu {
+
+	&-wrapper {
+		display: none;
+	}
+
+	@at-root ul#{&} {
+		display: flex;
+		font-size: 1.8rem;
+		font-weight: 500;
+		letter-spacing: -0.0277em;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin: -0.8rem 0 0 -1.6rem;
+	}
+
 	.icon {
 		display: block;
 		height: 0.7rem;
@@ -171,6 +180,10 @@ ul.primary-menu {
 				bottom: auto;
 				right: -1.6rem;
 				top: 2rem;
+
+				@at-root .rtl & {
+					transform: rotate(180deg);
+				}
 			}
 		}
 	}
@@ -197,20 +210,13 @@ ul.primary-menu {
 			}
 		}
 	}
-}
 
-.rtl .primary-menu ul ul::after {
-	transform: rotate(180deg);
-}
-
-//
-// Enable nav submenu expansion with tapping on arrows on large-viewport
-// touch interfaces (e.g. tablets or laptops with touch screens).
-// These rules are supported by all browsers (>IE11) and when JS is disabled.
-//
-@media (any-pointer: coarse) {
-
-	.primary-menu {
+	//
+	// Enable nav submenu expansion with tapping on arrows on large-viewport
+	// touch interfaces (e.g. tablets or laptops with touch screens).
+	// These rules are supported by all browsers (>IE11) and when JS is disabled.
+	//
+	@media (any-pointer: coarse) {
 
 		> li.menu-item-has-children > a {
 			padding-right: 0;
@@ -223,19 +229,19 @@ ul.primary-menu {
 			width: unset;
 		}
 	}
-}
 
-// Repeat previous rules for IE11 (when JS enabled for polyfill).
-body.touch-enabled .primary-menu {
+	// Repeat previous rules for IE11 (when JS enabled for polyfill).
+	@at-root body.touch-enabled & {
 
-	> li.menu-item-has-children > a {
-		padding-right: 0;
-		margin-right: 2rem;
-	}
+		> li.menu-item-has-children > a {
+			padding-right: 0;
+			margin-right: 2rem;
+		}
 
-	ul li.menu-item-has-children > a {
-		margin-right: 4.5rem;
-		padding-right: 0;
-		width: unset;
+		ul li.menu-item-has-children > a {
+			margin-right: 4.5rem;
+			padding-right: 0;
+			width: unset;
+		}
 	}
 }
