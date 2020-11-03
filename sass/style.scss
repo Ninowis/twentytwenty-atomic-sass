@@ -58,6 +58,7 @@ with others.
 @import "molecules/toggle";
 
 @import "organisms/comments";
+@import "organisms/entry-content";
 @import "organisms/header";
 @import "organisms/footer";
 @import "organisms/menu-modal";
@@ -68,7 +69,6 @@ with others.
 @import "templates/page.full-width";
 @import "templates/post.archive";
 @import "templates/post.single";
-@import "templates/entry-content";
 
 @import "pages/error.404";
 @import "pages/posts";

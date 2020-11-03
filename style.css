@@ -2505,6 +2505,81 @@ button.toggle{
 .comments .comment-respond .logged-in-as{
 	text-align:left;
 }
+.entry-content{
+	line-height:1.5;
+}
+
+.entry-content > *{
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1.25em;
+}
+
+.entry-content > *:first-child{
+	margin-top:0;
+}
+
+.entry-content > *:last-child{
+	margin-bottom:0;
+}
+
+.entry-content a:hover,
+.entry-content a:focus{
+	text-decoration:none;
+}
+
+.entry-content p,
+.entry-content li{
+	line-height:1.4;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6{
+	margin:3.5rem auto 2rem;
+}
+
+.entry-content ul ul,
+.entry-content ol ol,
+.entry-content ul ol,
+.entry-content ol ul{
+	margin-bottom:1rem;
+}
+
+.entry-content hr{
+	margin:4rem auto;
+}
+
+.entry-content p,
+.entry-content ol,
+.entry-content ul,
+.entry-content dl,
+.entry-content dt{
+	font-family:NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
+	letter-spacing:normal;
+}
+
+.entry-content cite,
+.entry-content figcaption,
+.entry-content .wp-caption-text{
+	font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@supports (font-variation-settings: normal){
+	.entry-content cite,
+	.entry-content figcaption,
+	.entry-content .wp-caption-text{
+		font-family:"Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
+	max-width:58rem;
+	width:calc(100% - 4rem);
+}
 #site-header{
 	background:#fff;
 	position:relative;
@@ -3375,6 +3450,11 @@ button.search-untoggle{
 	overflow:hidden;
 }
 
+.cover-header-inner{
+	padding:10rem 0 5rem 0;
+	width:100%;
+}
+
 .cover-header-inner-wrapper{
 	display:flex;
 	position:relative;
@@ -3383,13 +3463,31 @@ button.search-untoggle{
 	width:100%;
 }
 
-.cover-header-inner{
-	padding:10rem 0 5rem 0;
+.cover-header .entry-header{
+	position:relative;
 	width:100%;
+	z-index:1;
 }
 
-.cover-color-overlay,
-.cover-color-overlay::before{
+.cover-header .entry-header *{
+	color:#fff;
+}
+
+.cover-header .entry-header a{
+	color:inherit;
+}
+
+.cover-header h1,
+.cover-header h2,
+.cover-header h3,
+.cover-header h4,
+.cover-header h5,
+.cover-header h6,
+.cover-header .faux-heading{
+	color:inherit;
+}
+
+.cover-color-overlay, .cover-color-overlay::before{
 	position:absolute;
 	bottom:0;
 	left:0;
@@ -3403,39 +3501,9 @@ button.search-untoggle{
 	display:block;
 }
 
-.cover-header .entry-header{
-	position:relative;
-	width:100%;
-	z-index:1;
-}
-
-.cover-header .entry-header *{
-	color:#fff;
-}
-
 body.template-cover .entry-header{
 	background:transparent;
 	padding:0;
-}
-
-.cover-header h1,
-.cover-header h2,
-.cover-header h3,
-.cover-header h4,
-.cover-header h5,
-.cover-header h6,
-.cover-header .faux-heading{
-	color:inherit;
-}
-
-.cover-header .entry-header a{
-	color:inherit;
-}
-.to-the-content-wrapper{
-	position:absolute;
-	left:0;
-	right:0;
-	top:calc(100% + 0.5rem);
 }
 
 .to-the-content{
@@ -3444,6 +3512,13 @@ body.template-cover .entry-header{
 	justify-content:center;
 	height:4rem;
 	text-decoration:none;
+}
+
+.to-the-content-wrapper{
+	position:absolute;
+	left:0;
+	right:0;
+	top:calc(100% + 0.5rem);
 }
 
 .to-the-content svg{
@@ -3701,81 +3776,6 @@ h2.entry-title{
 
 .post-nav-links > *{
 	padding:1em 0.75em;
-}
-.entry-content{
-	line-height:1.5;
-}
-
-.entry-content > *{
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:1.25em;
-}
-
-.entry-content > *:first-child{
-	margin-top:0;
-}
-
-.entry-content > *:last-child{
-	margin-bottom:0;
-}
-
-.entry-content a:hover,
-.entry-content a:focus{
-	text-decoration:none;
-}
-
-.entry-content p,
-.entry-content li{
-	line-height:1.4;
-}
-
-.entry-content h1,
-.entry-content h2,
-.entry-content h3,
-.entry-content h4,
-.entry-content h5,
-.entry-content h6{
-	margin:3.5rem auto 2rem;
-}
-
-.entry-content ul ul,
-.entry-content ol ol,
-.entry-content ul ol,
-.entry-content ol ul{
-	margin-bottom:1rem;
-}
-
-.entry-content hr{
-	margin:4rem auto;
-}
-
-.entry-content p,
-.entry-content ol,
-.entry-content ul,
-.entry-content dl,
-.entry-content dt{
-	font-family:NonBreakingSpaceOverride, "Hoefler Text", Garamond, "Times New Roman", serif;
-	letter-spacing:normal;
-}
-
-.entry-content cite,
-.entry-content figcaption,
-.entry-content .wp-caption-text{
-	font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-@supports (font-variation-settings: normal){
-	.entry-content cite,
-	.entry-content figcaption,
-	.entry-content .wp-caption-text{
-		font-family:"Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-	}
-}
-
-.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide){
-	max-width:58rem;
-	width:calc(100% - 4rem);
 }
 .error404-content{
 	text-align:center;
