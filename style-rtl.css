@@ -1102,7 +1102,6 @@ section{
 .section-inner.no-margin{
 	margin:0;
 }
-
 .author-bio{
 	margin-top:4rem;
 	margin-left:auto;
@@ -2317,7 +2316,6 @@ body.touch-enabled .primary-menu ul li.menu-item-has-children > a{
 	margin-top:1em;
 	text-align:center;
 }
-
 .search-form{
 	align-items:stretch;
 	display:flex;
