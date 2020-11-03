@@ -1,8 +1,9 @@
-**This theme has been merged to core. Any future issues or contributions should be created on the WordPress trac instance**
 
-https://core.trac.wordpress.org/search?q=twenty+twenty%3A
+# TwentyTwenty Atomic Sass
 
-**If you open a ticket please prefix it with `Twenty Twenty:` so they are easy to find and work through.**
+## Description
+
+A Sass adaptation of WordPress default theme for 2020 decomposed following atomic design principles (see https://bradfrost.com/blog/post/atomic-web-design/), to ease re-usability of this theme as a boilerplate for any new theme development.
 
 ---
 
@@ -85,6 +86,21 @@ Underscores
 https://underscores.me/, (C) 2012-2019 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)  
 
 ## Changelog  
+
+### 1.1  
+
+* Released: December 12
+
+- Add customizer option to show or hide author bio (#48550)
+- Replace JS-based smooth scroll with CSS (#48551, #48763, #48866)
+- Fix on mobile devices using a webkit browser, the menu and search modals could not be opened due to a TypeError: document.body is null (#48601)
+- Fix correctly align the author bio and bottom post meta on single posts on mobile (#48619)
+- Remove duplicate array key/value in TwentyTwenty_Non_Latin_Languages::get_non_latin_css() (#48624)
+- Make the checkbox in the comment form larger and more consistent with other checkboxes (#48652)
+- Fix typos in a variable name and inline comment in assets/js/color-calculations.js. (#48704)
+- Fix placeholder misalignment in Firefox when a height is added as an inline style to the input field (#48876)
+- Pass $post_meta and $location values to twentytwenty_start_of_post_meta_list and twentytwenty_end_of_post_meta_list actions to provide better context (#48906)
+- Remove redundant echo for bloginfo() call in footer.php (#48918) 
 
 ### 1.0  
 
