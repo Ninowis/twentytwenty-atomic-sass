@@ -6,15 +6,18 @@
 		atoms/lists
  */
 
-ul.social-icons {
-	display: flex;
-	flex-wrap: wrap;
-	margin: -0.9rem 0 0 -0.9rem;
-    width: calc(100% + 0.9rem);
+.social-icons {
 
-    li {
-        margin: 0.9rem 0 0 0.9rem;
-    }
+	@at-root ul#{&} {
+		display: flex;
+		flex-wrap: wrap;
+		margin: -0.9rem 0 0 -0.9rem;
+		width: calc(100% + 0.9rem);
+
+		li {
+			margin: 0.9rem 0 0 0.9rem;
+		}
+	}
 
     a {
         align-items: center;

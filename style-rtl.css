@@ -2372,7 +2372,7 @@ ul.social-icons li{
 	margin:0.9rem 0.9rem 0 0;
 }
 
-ul.social-icons a{
+.social-icons a{
 	align-items:center;
 	background:#cd2653;
 	border-radius:50%;
@@ -2386,7 +2386,7 @@ ul.social-icons a{
 	width:4.4rem;
 }
 
-ul.social-icons a:focus, ul.social-icons a:hover{
+.social-icons a:focus, .social-icons a:hover{
 	transform:scale(1.1);
 	text-decoration:none;
 }
