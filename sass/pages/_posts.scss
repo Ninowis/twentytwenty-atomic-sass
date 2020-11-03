@@ -1,0 +1,9 @@
+/**
+ * Posts listing page
+ *
+ * @group Pages
+ */
+
+body:not(.singular) main > article:first-of-type {
+	padding: 4rem 0 0;
+}

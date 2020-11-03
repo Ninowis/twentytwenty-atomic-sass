@@ -47,6 +47,7 @@ with others.
 @import "molecules/comment-respond";
 @import "molecules/comment";
 @import "molecules/cover-modal";
+@import "molecules/featured-media";
 @import "molecules/gallery";
 @import "molecules/pagination-single";
 @import "molecules/pagination";
@@ -70,5 +71,7 @@ with others.
 @import "templates/entry-content";
 
 @import "pages/error.404";
+@import "pages/posts";
+@import "pages/search-results";
 
 @import "media-queries";
