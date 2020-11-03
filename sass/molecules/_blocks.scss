@@ -737,3 +737,24 @@ figure.wp-block-table.is-style-stripes {
 .wp-block-latest-posts.has-dates:not(.is-grid) li:first-child {
 	margin-top: 0;
 }
+
+
+/* Alignment Classes ------------------------- */
+
+[class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] {
+	> .alignleft,
+	> p .alignleft,
+	> .wp-block-image .alignleft {
+
+		/*rtl:ignore*/
+		margin-left: 2rem;
+	}
+
+	> .alignright,
+	> p .alignright,
+	> .wp-block-image .alignright {
+
+		/*rtl:ignore*/
+		margin-right: 2rem;
+	}
+}

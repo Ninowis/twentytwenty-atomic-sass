@@ -34,6 +34,13 @@ figcaption,
 	a {
 		color: inherit;
 	}
+
+	@at-root .alignfull > & {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 58rem;
+		width: calc(100% - 4rem);
+	}
 }
 
 blockquote.instagram-media,
