@@ -23,7 +23,7 @@
 	@at-root .admin-bar &.active {
 		top: 32px;
 
-		@media (max-width: 782px) {
+		@media (max-width: $medium) {
 			top: 46px;
 		}
 	}

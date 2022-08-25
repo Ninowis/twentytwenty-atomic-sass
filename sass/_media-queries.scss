@@ -4,7 +4,7 @@
 /*	17. Media Queries
 /* -------------------------------------------------------------------------- */
 
-@media ( max-width: 479px ) {
+@media ( max-width: ($xsmall - 1px) ) {
 
 	/* Blocks -------------------------------- */
 
@@ -27,7 +27,7 @@
 	}
 }
 
-@media ( min-width: 480px ) {
+@media ( min-width: $xsmall ) {
 
 	/* Blocks -------------------------------- */
 
@@ -100,7 +100,7 @@
 
 }
 
-@media ( min-width: 660px ) {
+@media ( min-width: ($small - 40px) ) {
 
 	/* Blocks -------------------------------- */
 
@@ -166,7 +166,7 @@
 
 }
 
-@media ( min-width: 700px ) {
+@media ( min-width: $small ) {
 
 	/* Element Base ------------------------- */
 
@@ -1074,7 +1074,7 @@
 
 }
 
-@media (min-width: 782px) {
+@media (min-width: $medium) {
 
 	/* Blocks -------------------------------- */
 
@@ -1090,7 +1090,7 @@
 	}
 }
 
-@media ( min-width: 1000px ) {
+@media ( min-width: $desktop-nav ) {
 
 
 	/* Document Setup ------------------------ */
@@ -1539,7 +1539,7 @@
 }
 
 
-@media ( min-width: 1220px ) {
+@media ( min-width: ($large - 60px) ) {
 
 	/* Element Base -------------------------- */
 
@@ -1732,7 +1732,7 @@
 
 }
 
-@media ( min-width: 1240px ) {
+@media ( min-width: ($large - 40px) ) {
 
 
 	/* Blocks -------------------------------- */
@@ -1751,7 +1751,7 @@
 
 }
 
-@media ( min-width: 1280px ) {
+@media ( min-width: $large ) {
 
 	/* Blocks -------------------------------- */
 
@@ -1856,7 +1856,7 @@
 
 }
 
-@media ( min-width: 1330px ) {
+@media ( min-width: $xlarge ) {
 
 
 	/* Entry Content ------------------------- */

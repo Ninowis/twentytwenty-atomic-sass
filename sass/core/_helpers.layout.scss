@@ -15,7 +15,7 @@
 	min-height: calc(100vh - 32px);
 }
 
-@media (max-width: 782px) {
+@media (max-width: $medium) {
 
 	.admin-bar .screen-height {
 		min-height: calc(100vh - 46px);
