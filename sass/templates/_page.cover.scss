@@ -98,3 +98,31 @@ body.template-cover .entry-header {
 		transform: translateY(20%);
 	}
 }
+
+@media ( min-width: $small ) {
+
+	/* Template: Cover Template -------------- */
+
+	.cover-header-inner {
+		padding: 18rem 0 8rem 0;
+	}
+
+	.to-the-content-wrapper {
+		top: calc(100% + 1.8rem);
+	}
+
+	.to-the-content {
+		height: 6rem;
+	}
+
+	.to-the-content svg {
+		height: 2.4rem;
+		width: 2.12rem;
+	}
+}
+
+@media ( min-width: ($large - 60px) ) {
+	.cover-header + .post-inner {
+		padding-top: 10rem;
+	}
+}

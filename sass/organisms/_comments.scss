@@ -76,3 +76,35 @@
 		}
 	}
 }
+
+@media ( min-width: $small ) {
+	.comments-wrapper {
+		margin-top: 8rem;
+	}
+
+	.comments .comment,
+	.comments .pingback,
+	.comments .trackback,
+	.comments .review {
+		padding-top: 5rem;
+	}
+
+	.comments .comment:first-of-type {
+		margin-top: 5rem;
+	}
+
+	.comments .comment-respond {
+		padding: 5rem 0 0;
+	}
+}
+
+@media ( min-width: ($large - 60px) ) {
+	.comments .comment-respond .comment-reply-title {
+		font-size: 4.8rem;
+	}
+
+	.comments .comment-respond p.comment-notes,
+	.comments .comment-respond p.logged-in-as {
+		margin: -4.5rem 0 4rem 0;
+	}
+}

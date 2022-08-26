@@ -205,3 +205,23 @@ input[type="submit"] {
 		text-decoration: underline;
 	}
 }
+
+@media ( min-width: $small ) {
+	fieldset {
+		padding: 3rem;
+	}
+
+	legend {
+		padding: 0 1.5rem;
+	}
+
+	button,
+	.button,
+	.faux-button,
+	.wp-block-button__link,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"] {
+		font-size: 1.7rem;
+	}
+}

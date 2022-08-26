@@ -131,10 +131,25 @@
 	}
 }
 
+@media ( min-width: $small ) {
 
+	.search-modal form {
+		position: relative;
+		width: 100%;
+	}
 
+	.search-untoggle svg {
+		height: 2.5rem;
+		width: 2.5rem;
+	}
 
+	.search-modal .search-field {
+		border: none;
+		font-size: 3.2rem;
+		height: 14rem;
+	}
 
-
-
-/* Modal Search Form ------------------------- */
+	.search-modal .search-field::-moz-placeholder {
+		line-height: 4.375;
+	}
+}

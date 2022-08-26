@@ -54,3 +54,51 @@
 .nav-short {
 	display: none;
 }
+
+@media ( min-width: $small ) {
+	.pagination-separator {
+		margin: 8rem 0;
+	}
+
+	// Display the full text for Newer and Older Posts
+
+	.nav-short {
+		display: inline;
+	}
+
+	.pagination .nav-links {
+		font-size: 2.4rem;
+		font-weight: 700;
+		margin: -2.5rem 0 0 -4rem;
+	}
+
+	.nav-links > * {
+		margin: 2.5rem 0 0 4rem;
+	}
+}
+
+@media ( min-width: $desktop-nav ) {
+	.pagination .nav-links {
+		justify-content: space-between;
+		margin: 0;
+		width: 100%;
+	}
+
+	.nav-links > * {
+		margin: 0 2rem;
+	}
+
+	.pagination .next,
+	.pagination .prev {
+		display: block;
+	}
+
+	.pagination .prev {
+		margin: 0 auto 0 0;
+	}
+
+	.pagination .next {
+		text-align: right;
+		margin: 0 0 0 auto;
+	}
+}

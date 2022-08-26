@@ -245,3 +245,13 @@
 		}
 	}
 }
+
+@media ( min-width: ($large - 60px) ) {
+	ul.primary-menu {
+		margin: -0.8rem 0 0 -2.5rem;
+	}
+
+	.primary-menu > li {
+		margin: 0.8rem 0 0 2.5rem;
+	}
+}

@@ -67,3 +67,21 @@ dt {
 dd + dt {
 	margin-top: 1.5rem;
 }
+
+@media ( max-width: ($xsmall - 1px) ) {
+	ul,
+	ol {
+		margin: 0 0 3rem 2rem;
+	}
+
+	li {
+		margin: 0.5rem 0 0 1rem;
+	}
+}
+
+@media ( min-width: $small ) {
+	ul,
+	ol {
+		margin-bottom: 4rem;
+	}
+}

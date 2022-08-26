@@ -47,3 +47,22 @@ blockquote.instagram-media,
 iframe.instagram-media {
 	margin: auto !important;
 }
+
+@media ( min-width: $small ) {
+	figcaption,
+	.wp-caption-text {
+		margin-top: 1.8rem;
+	}
+
+	.alignfull > figcaption,
+	.alignfull > .wp-caption-text {
+		width: calc(100% - 8rem);
+	}
+}
+
+@media ( min-width: $desktop-nav ) {
+	.alignfull > figcaption,
+	.alignfull > .wp-caption-text {
+		width: calc(100% - 10rem);
+	}
+}

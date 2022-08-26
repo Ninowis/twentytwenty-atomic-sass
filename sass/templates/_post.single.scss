@@ -209,3 +209,75 @@
 	}
 }
 
+@media ( min-width: $small ) {
+
+	// POST HEADER
+
+	.singular .entry-header {
+		padding: 8rem 0;
+	}
+
+	.entry-categories {
+		margin-bottom: 3rem;
+	}
+
+	.entry-categories-inner {
+		margin: -1rem 0 0 -2rem;
+	}
+
+	.entry-categories a {
+		font-size: 1.5rem;
+		margin: 1rem 0 0 2rem;
+	}
+
+	.intro-text {
+		font-size: 2rem;
+		margin-top: 2.5rem;
+	}
+
+	.singular .intro-text {
+		font-size: 2.6rem;
+	}
+
+	.post-meta-wrapper {
+		margin-top: 3rem;
+	}
+
+	.post-meta {
+		font-size: 1.6rem;
+		margin: -1.4rem 0 0 -3rem;
+	}
+
+	.post-meta li {
+		margin: 1.4rem 0 0 3rem;
+		max-width: calc(100% - 3rem);
+	}
+
+	.featured-media {
+		margin-top: 6rem;
+	}
+
+	.post-inner {
+		padding-top: 8rem;
+	}
+
+	// POST FOOTER
+
+	.post-meta-wrapper.post-meta-single-bottom {
+		margin-top: 4rem;
+	}
+}
+
+@media ( min-width: $desktop-nav ) {
+	.singular .intro-text {
+		font-size: 2.8rem;
+	}
+}
+
+@media ( min-width: ($large - 60px) ) {
+	.singular .intro-text {
+		font-size: 3.2rem;
+		letter-spacing: -0.03125em;
+		line-height: 1.375;
+	}
+}

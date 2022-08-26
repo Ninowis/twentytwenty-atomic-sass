@@ -18,3 +18,9 @@
 		}
 	}
 }
+
+@media ( min-width: $small ) {
+	.error404 #site-content {
+		padding-top: 8rem;
+	}
+}

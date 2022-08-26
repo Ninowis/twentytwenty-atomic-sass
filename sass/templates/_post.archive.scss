@@ -28,3 +28,25 @@
 		margin-bottom: 0;
 	}
 }
+
+@media ( min-width: $small ) {
+	.archive-header {
+		padding: 8rem 0;
+	}
+
+	.reduced-spacing .archive-header {
+		padding-bottom: 3rem;
+	}
+
+	.archive-title {
+		font-size: 3.2rem;
+	}
+
+	body:not(.singular) main > article:first-of-type {
+		padding: 8rem 0 0;
+	}
+
+	h2.entry-title {
+		font-size: 6.4rem;
+	}
+}

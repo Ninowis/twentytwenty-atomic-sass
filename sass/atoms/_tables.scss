@@ -43,3 +43,9 @@ thead {
 th {
 	font-weight: 700;
 }
+
+@media ( min-width: $small ) {
+	table {
+		font-size: 1.8rem;
+	}
+}

@@ -28,3 +28,9 @@ pre {
 		padding: 0;
 	}
 }
+
+@media ( min-width: $small ) {
+	pre {
+		padding: 3rem;
+	}
+}

@@ -20,3 +20,17 @@
 		width: calc(100% - 5rem);
 	}
 }
+
+@media ( min-width: $small ) {
+
+	.featured-media figcaption {
+		margin: 2rem auto 0 auto;
+		width: calc(100% - 8rem);
+	}
+}
+
+@media ( min-width: $desktop-nav ) {
+	.featured-media figcaption {
+		width: 100%;
+	}
+}

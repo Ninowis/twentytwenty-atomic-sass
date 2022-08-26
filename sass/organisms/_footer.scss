@@ -152,3 +152,149 @@
 		}
 	}
 }
+
+@media ( min-width: $small ) {
+
+	.footer-top-visible .footer-nav-widgets-wrapper,
+	.footer-top-hidden #site-footer {
+		margin-top: 8rem;
+	}
+
+	// FOOTER TOP
+
+	.footer-top {
+		padding: 3.7rem 0;
+	}
+
+	.footer-menu {
+		font-size: 2.4rem;
+		margin: -0.8rem 0 0 -1.6rem;
+	}
+
+	.footer-menu li {
+		margin: 0.8rem 0 0 1.6rem;
+	}
+
+	.has-footer-menu .footer-social-wrapper {
+		flex: 1;
+		margin-left: 4rem;
+		width: auto;
+	}
+
+	// FOOTER WIDGETS
+
+	.footer-widgets-outer-wrapper {
+		padding: 8rem 0;
+	}
+
+	.footer-widgets-wrapper {
+		display: flex;
+		justify-content: space-between;
+		margin-left: -4rem;
+		width: calc(100% + 4rem);
+	}
+
+	.footer-widgets {
+		margin-left: 4rem;
+		width: 50%;
+	}
+
+	.footer-widgets + .footer-widgets {
+		margin-top: 0;
+	}
+
+	.footer-widgets .widget {
+		border-top: none;
+		margin-top: 5rem;
+		padding-top: 0;
+	}
+
+	.footer-widgets .widget:first-child {
+		margin-top: 0;
+	}
+
+	/* FOOTER BOTTOM */
+
+	#site-footer {
+		font-size: 1.8rem;
+		padding: 4.3rem 0;
+	}
+
+	.footer-credits {
+		display: flex;
+	}
+
+	.footer-copyright {
+		font-weight: 700;
+	}
+
+	.powered-by-wordpress {
+		display: block;
+	}
+
+	.to-the-top-long {
+		display: inline;
+	}
+
+	.to-the-top-short {
+		display: none;
+	}
+}
+
+@media ( min-width: $desktop-nav ) {
+	.footer-top {
+		align-items: center;
+	}
+
+	.footer-menu {
+		align-items: baseline;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		font-size: 2.1rem;
+		margin: -1.2rem 0 0 -2.4rem;
+	}
+
+	.footer-menu li {
+		margin: 1.2rem 0 0 2.4rem;
+	}
+}
+
+@media ( min-width: ($large - 60px) ) {
+	.footer-menu {
+		font-size: 2.4rem;
+		margin: -1.5rem 0 0 -3rem;
+	}
+
+	.footer-menu li {
+		margin: 1.5rem 0 0 3rem;
+	}
+
+	ul.footer-social {
+		margin: -1rem 0 0 -1rem;
+	}
+
+	ul.footer-social li {
+		margin: 1rem 0 0 1rem;
+	}
+
+	.footer-social a {
+		height: 4.4rem;
+		width: 4.4rem;
+	}
+
+	.footer-social a::before {
+		font-size: 2rem;
+	}
+
+	// FOOTER WIDGETS
+
+	.footer-widgets-wrapper {
+		margin-left: -6rem;
+		width: calc(100% + 6rem);
+	}
+
+	.footer-widgets {
+		margin-left: 6rem;
+	}
+}
