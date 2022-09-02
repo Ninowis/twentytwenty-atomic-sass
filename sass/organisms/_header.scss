@@ -26,7 +26,7 @@
 			align-items: center;
 			display: flex;
 			justify-content: center;
-			padding: 0 4rem;
+			padding: 0 (2 * $base-margin);
 			text-align: center;
 
 			body:not(.enable-search-modal) & {
@@ -109,7 +109,7 @@
 				align-items: center;
 				display: flex;
 				overflow: visible;
-				padding: 0 2rem;
+				padding: 0 $base-margin;
 
 				svg {
 					display: block;
@@ -232,11 +232,11 @@
 	}
 
 	.search-toggle {
-		left: 2rem;
+		left: $base-margin;
 	}
 
 	.nav-toggle {
-		right: 2rem;
+		right: $base-margin;
 	}
 }
 
@@ -253,7 +253,7 @@
 	}
 
 	.header-titles-wrapper {
-		margin-right: 4rem;
+		margin-right: (2 * $base-margin);
 		max-width: 50%;
 		padding: 0;
 		text-align: left;
@@ -297,18 +297,18 @@
 	}
 
 	.primary-menu-wrapper + .header-toggles {
-		margin-left: 3rem;
+		margin-left: (1.5 * $base-margin);
 	}
 
 	.header-toggles {
 		display: flex;
 		flex-shrink: 0;
-		margin-right: -3rem;
+		margin-right: -(1.5 * $base-margin);
 	}
 
 	.header-inner .toggle {
 		height: 4.4rem;
-		padding: 0 3rem;
+		padding: 0 (1.5 * $base-margin);
 		position: relative;
 		bottom: auto;
 		left: auto;
@@ -383,14 +383,14 @@
 	// HEADER TOGGLES
 
 	.primary-menu-wrapper + .header-toggles {
-		margin-left: 4rem;
+		margin-left: (2 * $base-margin);
 	}
 
 	.header-toggles {
-		margin-right: -4rem;
+		margin-right: -(2 * $base-margin);
 	}
 
 	.header-toggles .toggle {
-		padding: 0 4rem;
+		padding: 0 (2 * $base-margin);
 	}
 }

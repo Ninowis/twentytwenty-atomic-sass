@@ -40,7 +40,7 @@
 	h4,
 	h5,
 	h6 {
-		margin: 3.5rem auto 2rem;
+		margin: 3.5rem auto $base-margin;
 	}
 
 	ul ul,
@@ -51,7 +51,7 @@
 	}
 
 	hr {
-		margin: 4rem auto;
+		margin: (2 * $base-margin) auto;
 	}
 
 	// Font Families
@@ -84,7 +84,7 @@
 
 	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 		max-width: $medium-max-width;
-		width: calc(100% - 4rem);
+		width: calc(100% - #{(2 * $base-margin)});
 	}
 }
 
@@ -95,27 +95,27 @@
 	.entry-content > .alignleft {
 
 		/*rtl:ignore*/
-		margin-left: 4rem;
+		margin-left: (2 * $base-margin);
 	}
 
 	.entry-content > p .alignleft,
 	.entry-content > .wp-block-image .alignleft {
 
 		/*rtl:ignore*/
-		margin-left: calc(( 100vw - 58rem - 8rem ) / -2);
+		margin-left: calc(( 100vw - #{$medium-max-width} - #{(4 * $base-margin)} ) / -2);
 	}
 
 	.entry-content > .alignright {
 
 		/*rtl:ignore*/
-		margin-right: 4rem;
+		margin-right: (2 * $base-margin);
 	}
 
 	.entry-content > p .alignright,
 	.entry-content > .wp-block-image .alignright {
 
 		/*rtl:ignore*/
-		margin-right: calc(( 100vw - 58rem - 8rem ) / -2);
+		margin-right: calc(( 100vw - #{$medium-max-width} - #{(4 * $base-margin)} ) / -2);
 	}
 }
 
@@ -132,7 +132,7 @@
 	.entry-content h1,
 	.entry-content h2,
 	.entry-content h3 {
-		margin: 6rem auto 3rem;
+		margin: (3 * $base-margin) auto (1.5 * $base-margin);
 	}
 
 	.entry-content h4,
@@ -147,25 +147,25 @@
 	.entry-content .wp-block-columns h4,
 	.entry-content .wp-block-columns h5,
 	.entry-content .wp-block-columns h6 {
-		margin: 3.5rem 0 2rem;
+		margin: 3.5rem 0 $base-margin;
 	}
 
 	.entry-content > .alignwide:not(.wp-block-group.has-background),
 	.entry-content > .alignfull:not(.wp-block-group.has-background) {
-		margin-bottom: 6rem;
-		margin-top: 6rem;
+		margin-bottom: (3 * $base-margin);
+		margin-top: (3 * $base-margin);
 	}
 
 	.entry-content > .alignwide {
-		max-width: calc(100vw - 8rem);
-		width: calc(100vw - 8rem);
+		max-width: calc(100vw - #{(4 * $base-margin)});
+		width: calc(100vw - #{(4 * $base-margin)});
 	}
 }
 
 @media ( min-width: $desktop-nav ) {
 	.entry-content > .wp-block-group.alignwide.has-background,
 	.entry-content > .wp-block-group.alignfull.has-background {
-		padding: 8rem 4rem;
+		padding: (4 * $base-margin) (2 * $base-margin);
 		margin-bottom: 0;
 		margin-top: 0;
 	}
@@ -178,8 +178,8 @@
 		position: absolute;
 
 		/*rtl:ignore*/
-		right: calc((100vw - 58rem) / 2 + 58rem + 2rem);
-		max-width: calc((100% - 58rem) / 2 - 6rem);
+		right: calc((100vw - #{$medium-max-width}) / 2 + #{$medium-max-width} + #{$base-margin});
+		max-width: calc((100% - #{$medium-max-width}) / 2 - #{(3 * $base-margin)});
 	}
 
 	.entry-content > .alignright,
@@ -189,21 +189,21 @@
 		position: absolute;
 
 		/*rtl:ignore*/
-		left: calc((100vw - 58rem) / 2 + 58rem + 2rem);
-		max-width: calc((100% - 58rem) / 2 - 6rem);
+		left: calc((100vw - #{$medium-max-width}) / 2 + #{$medium-max-width} + #{$base-margin});
+		max-width: calc((100% - #{$medium-max-width}) / 2 - #{(3 * $base-margin)});
 	}
 
 	.entry-content > .alignwide:not(.wp-block-group.has-background),
 	.entry-content > .alignfull:not(.wp-block-group.has-background) {
-		margin-bottom: 8rem;
-		margin-top: 8rem;
+		margin-bottom: (4 * $base-margin);
+		margin-top: (4 * $base-margin);
 	}
 }
 
 @media ( min-width: ($large - 60px) ) {
 	.entry-content > .wp-block-group.alignwide.has-background,
 	.entry-content > .wp-block-group.alignfull.has-background {
-		padding: 8rem 6rem;
+		padding: (4 * $base-margin) (3 * $base-margin);
 		margin-bottom: 0;
 		margin-top: 0;
 	}
@@ -220,7 +220,7 @@
 	[class*="wp-block"].alignwide.has-background [class*="__inner-container"] > .wp-block-image .alignleft {
 
 		/*rtl:ignore*/
-		right: calc((100% - 58rem) / 2 + 58rem - 2rem);
+		right: calc((100% - #{$medium-max-width}) / 2 + #{$medium-max-width} - #{$base-margin});
 	}
 
 	[class*="wp-block"].alignwide.has-background [class*="__inner-container"] > .alignright,
@@ -228,7 +228,7 @@
 	[class*="wp-block"].alignwide.has-background [class*="__inner-container"] > .wp-block-image .alignright {
 
 		/*rtl:ignore*/
-		left: calc((100% - 58rem) / 2 + 58rem + 6rem);
+		left: calc((100% - #{$medium-max-width}) / 2 + #{$medium-max-width} + #{(3 * $base-margin)});
 	}
 }
 
@@ -238,7 +238,7 @@
 	.entry-content > .wp-block-image .alignleft {
 
 		/*rtl:ignore*/
-		right: calc((100vw - 58rem) / 2 + 58rem + 4rem);
+		right: calc((100vw - #{$medium-max-width}) / 2 + #{$medium-max-width} + #{(2 * $base-margin)});
 
 		/*rtl:ignore*/
 		margin-left: -31rem;
@@ -249,7 +249,7 @@
 	.entry-content > .wp-block-image .alignright {
 
 		/*rtl:ignore*/
-		left: calc((100vw - 58rem) / 2 + 58rem + 4rem);
+		left: calc((100vw - #{$medium-max-width}) / 2 + #{$medium-max-width} + #{(2 * $base-margin)});
 
 		/*rtl:ignore*/
 		margin-right: -31rem;

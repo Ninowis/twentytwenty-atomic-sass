@@ -24,8 +24,8 @@
 @media ( min-width: $small ) {
 
 	.featured-media figcaption {
-		margin: 2rem auto 0 auto;
-		width: calc(100% - 8rem);
+		margin: $base-margin auto 0 auto;
+		width: calc(100% - #{(4 * $base-margin)});
 	}
 }
 

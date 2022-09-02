@@ -39,7 +39,7 @@ figcaption,
 		margin-left: auto;
 		margin-right: auto;
 		max-width: $medium-max-width;
-		width: calc(100% - 4rem);
+		width: calc(100% - #{(2 * $base-margin)});
 	}
 }
 
@@ -56,7 +56,7 @@ iframe.instagram-media {
 
 	.alignfull > figcaption,
 	.alignfull > .wp-caption-text {
-		width: calc(100% - 8rem);
+		width: calc(100% - #{(4 * $base-margin)});
 	}
 }
 

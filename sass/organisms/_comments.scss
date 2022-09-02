@@ -34,7 +34,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		margin-top: 6rem;
+		margin-top: (3 * $base-margin);
 		text-align: center;
 
 		&.only-next {
@@ -67,7 +67,7 @@
 	}
 
 	.comment-respond {
-		padding: 3rem 0 0;
+		padding: (1.5 * $base-margin) 0 0;
 
 		.comment-reply-title,
 		.comment-notes,
@@ -79,7 +79,7 @@
 
 @media ( min-width: $small ) {
 	.comments-wrapper {
-		margin-top: 8rem;
+		margin-top: (4 * $base-margin);
 	}
 
 	.comments .comment,
@@ -105,6 +105,6 @@
 
 	.comments .comment-respond p.comment-notes,
 	.comments .comment-respond p.logged-in-as {
-		margin: -4.5rem 0 4rem 0;
+		margin: -4.5rem 0 (2 * $base-margin) 0;
 	}
 }

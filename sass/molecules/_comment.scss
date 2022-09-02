@@ -14,7 +14,7 @@
 	}
 
 	&-reply-title {
-		margin: 0 0 4rem 0;
+		margin: 0 0 (2 * $base-margin) 0;
 		text-align: center;
 	}
 
@@ -145,7 +145,7 @@
 
 @media ( min-width: $small ) {
 	.comment-meta {
-		margin-bottom: 2rem;
+		margin-bottom: $base-margin;
 		min-height: 6rem;
 		padding: 0.3rem 0 0 7.5rem;
 	}
@@ -177,7 +177,7 @@
 	}
 
 	.comments-pagination {
-		margin-top: 8rem;
+		margin-top: (4 * $base-margin);
 	}
 
 	// PINGBACKS & TRACKBACKS
@@ -193,6 +193,6 @@
 	}
 
 	.comment-meta .avatar {
-		left: -8rem;
+		left: -(4 * $base-margin);
 	}
 }

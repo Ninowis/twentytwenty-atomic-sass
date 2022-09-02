@@ -16,7 +16,7 @@
 /* Widget Base ------------------------------- */
 
 .widget {
-	margin-top: 3rem;
+	margin-top: (1.5 * $base-margin);
 
 	&:first-child {
 		margin-top: 0;
@@ -32,11 +32,11 @@
 	}
 
 	.widget-title {
-		margin: 0 0 2rem;
+		margin: 0 0 $base-margin;
 	}
 
 	li {
-		margin: 2rem 0 0 0;
+		margin: $base-margin 0 0 0;
 
 		&:first-child,
 		> ul,
@@ -118,7 +118,7 @@
 			margin: 0.3rem 0;
 
 			li {
-				margin-left: 2rem;
+				margin-left: $base-margin;
 			}
 		}
 
@@ -306,7 +306,7 @@
 
 @media ( min-width: $small ) {
 	.widget .widget-title {
-		margin-bottom: 3rem;
+		margin-bottom: (1.5 * $base-margin);
 	}
 }
 

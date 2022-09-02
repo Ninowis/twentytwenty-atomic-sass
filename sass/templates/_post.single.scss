@@ -11,7 +11,7 @@
 .singular {
 	.entry-header {
 		background-color: #fff;
-		padding: 4rem 0;
+		padding: (2 * $base-margin) 0;
 	}
 
 	.featured-media {
@@ -38,7 +38,7 @@
 
 .entry-categories {
 	line-height: 1.25;
-	margin-bottom: 2rem;
+	margin-bottom: $base-margin;
 
 	&-inner {
 		justify-content: center;
@@ -85,7 +85,7 @@
 
 
 .intro-text {
-	margin-top: 2rem;
+	margin-top: $base-margin;
 
 	@at-root .singular & {
 		font-size: 2rem;
@@ -114,14 +114,14 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 		list-style: none;
-		margin: -1rem 0 0 -2rem;
+		margin: -($base-margin / 2) 0 0 (-$base-margin);
 
 		&-single-top .post-meta {
 			justify-content: center;
 		}
 
 		&-wrapper {
-			margin-top: 2rem;
+			margin-top: $base-margin;
 			margin-right: auto;
 			margin-left: auto;
 			max-width: $medium-max-width;
@@ -131,8 +131,8 @@
 		li {
 			flex-shrink: 0;
 			letter-spacing: -0.016875em;
-			margin: 1rem 0 0 2rem;
-			max-width: calc(100% - 2rem);
+			margin: 1rem 0 0 $base-margin;
+			max-width: calc(100% - #{$base-margin});
 		}
 
 		a {
@@ -190,7 +190,7 @@
 		}
 
 		&-wrapper.post-meta-single-bottom {
-			margin-top: 3rem;
+			margin-top: (1.5 * $base-margin);
 		}
 	}
 
@@ -214,20 +214,20 @@
 	// POST HEADER
 
 	.singular .entry-header {
-		padding: 8rem 0;
+		padding: (4 * $base-margin) 0;
 	}
 
 	.entry-categories {
-		margin-bottom: 3rem;
+		margin-bottom: (1.5 * $base-margin);
 	}
 
 	.entry-categories-inner {
-		margin: -1rem 0 0 -2rem;
+		margin: -($base-margin / 2) 0 0 (-$base-margin);
 	}
 
 	.entry-categories a {
 		font-size: 1.5rem;
-		margin: 1rem 0 0 2rem;
+		margin: ($base-margin / 2) 0 0 $base-margin;
 	}
 
 	.intro-text {
@@ -240,31 +240,31 @@
 	}
 
 	.post-meta-wrapper {
-		margin-top: 3rem;
+		margin-top: (1.5 * $base-margin);
 	}
 
 	.post-meta {
 		font-size: 1.6rem;
-		margin: -1.4rem 0 0 -3rem;
+		margin: -1.4rem 0 0 (-1.5 * $base-margin);
 	}
 
 	.post-meta li {
-		margin: 1.4rem 0 0 3rem;
-		max-width: calc(100% - 3rem);
+		margin: 1.4rem 0 0 (1.5 * $base-margin);
+		max-width: calc(100% - #{(1.5 * $base-margin)});
 	}
 
 	.featured-media {
-		margin-top: 6rem;
+		margin-top: (3 * $base-margin);
 	}
 
 	.post-inner {
-		padding-top: 8rem;
+		padding-top: (4 * $base-margin);
 	}
 
 	// POST FOOTER
 
 	.post-meta-wrapper.post-meta-single-bottom {
-		margin-top: 4rem;
+		margin-top: (2 * $base-margin);
 	}
 }
 

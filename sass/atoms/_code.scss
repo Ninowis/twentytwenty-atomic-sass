@@ -18,9 +18,9 @@ samp {
 pre {
 	border: 0.1rem solid #dcd7ca;
 	line-height: 1.5;
-	margin: 4rem 0;
+	margin: (2 * $base-margin) 0;
 	overflow: auto;
-	padding: 3rem 2rem;
+	padding: (1.5 * $base-margin) $base-margin;
 	text-align: left;
 
 	code {
@@ -31,6 +31,6 @@ pre {
 
 @media ( min-width: $small ) {
 	pre {
-		padding: 3rem;
+		padding: (1.5 * $base-margin);
 	}
 }

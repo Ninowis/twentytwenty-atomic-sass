@@ -10,10 +10,10 @@
 
 	&-header {
 		background-color: #fff;
-		padding: 4rem 0;
+		padding: (2 * $base-margin) 0;
 
 		@at-root .reduced-spacing & {
-			padding-bottom: 2rem;
+			padding-bottom: $base-margin;
 		}
 	}
 
@@ -31,11 +31,11 @@
 
 @media ( min-width: $small ) {
 	.archive-header {
-		padding: 8rem 0;
+		padding: (4 * $base-margin) 0;
 	}
 
 	.reduced-spacing .archive-header {
-		padding-bottom: 3rem;
+		padding-bottom: (1.5 * $base-margin);
 	}
 
 	.archive-title {
@@ -43,7 +43,7 @@
 	}
 
 	body:not(.singular) main > article:first-of-type {
-		padding: 8rem 0 0;
+		padding: (4 * $base-margin) 0 0;
 	}
 
 	h2.entry-title {

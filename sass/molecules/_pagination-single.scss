@@ -56,7 +56,7 @@
 
 	.pagination-single {
 		font-size: 2.4rem;
-		margin-top: 8rem;
+		margin-top: (4 * $base-margin);
 	}
 
 	.pagination-single-inner {
@@ -69,19 +69,19 @@
 	}
 
 	.pagination-single hr:first-child {
-		margin: 0 0 4rem 0;
+		margin: 0 0 (2 * $base-margin) 0;
 	}
 
 	.pagination-single hr:last-child {
-		margin: 4rem 0 0.8rem 0;
+		margin: (2 * $base-margin) 0 0.8rem 0;
 	}
 
 	.pagination-single a + a {
-		margin: 0 0 0 4rem;
+		margin: 0 0 0 (2 * $base-margin);
 	}
 
 	.pagination-single a .arrow {
-		margin: 0 2rem 0 0;
+		margin: 0 $base-margin 0 0;
 	}
 
 	.pagination-single .next-post {
@@ -90,6 +90,6 @@
 	}
 
 	.pagination-single .next-post .arrow {
-		margin: 0 0 0 2rem;
+		margin: 0 0 0 $base-margin;
 	}
 }

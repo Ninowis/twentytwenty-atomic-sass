@@ -27,7 +27,7 @@
 .footer-top,
 .footer-widgets-outer-wrapper,
 #site-footer {
-	padding: 3rem 0;
+	padding: (1.5 * $base-margin) 0;
 }
 
 .footer-top {
@@ -97,7 +97,7 @@
 		border-bottom: 0.1rem solid #dedfdf;
 	}
 	+ .footer-widgets {
-		margin-top: 3rem;
+		margin-top: (1.5 * $base-margin);
 	}
 }
 
@@ -157,7 +157,7 @@
 
 	.footer-top-visible .footer-nav-widgets-wrapper,
 	.footer-top-hidden #site-footer {
-		margin-top: 8rem;
+		margin-top: (4 * $base-margin);
 	}
 
 	// FOOTER TOP
@@ -177,25 +177,25 @@
 
 	.has-footer-menu .footer-social-wrapper {
 		flex: 1;
-		margin-left: 4rem;
+		margin-left: (2 * $base-margin);
 		width: auto;
 	}
 
 	// FOOTER WIDGETS
 
 	.footer-widgets-outer-wrapper {
-		padding: 8rem 0;
+		padding: (4 * $base-margin) 0;
 	}
 
 	.footer-widgets-wrapper {
 		display: flex;
 		justify-content: space-between;
-		margin-left: -4rem;
-		width: calc(100% + 4rem);
+		margin-left: -(2 * $base-margin);
+		width: calc(100% + #{(2 * $base-margin)});
 	}
 
 	.footer-widgets {
-		margin-left: 4rem;
+		margin-left: (2 * $base-margin);
 		width: 50%;
 	}
 
@@ -263,11 +263,11 @@
 @media ( min-width: ($large - 60px) ) {
 	.footer-menu {
 		font-size: 2.4rem;
-		margin: -1.5rem 0 0 -3rem;
+		margin: -1.5rem 0 0 (-1.5 * $base-margin);
 	}
 
 	.footer-menu li {
-		margin: 1.5rem 0 0 3rem;
+		margin: 1.5rem 0 0 (1.5 * $base-margin);
 	}
 
 	ul.footer-social {
@@ -290,11 +290,11 @@
 	// FOOTER WIDGETS
 
 	.footer-widgets-wrapper {
-		margin-left: -6rem;
-		width: calc(100% + 6rem);
+		margin-left: -(3 * $base-margin);
+		width: calc(100% + #{(3 * $base-margin)});
 	}
 
 	.footer-widgets {
-		margin-left: 6rem;
+		margin-left: (3 * $base-margin);
 	}
 }

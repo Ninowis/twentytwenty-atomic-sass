@@ -39,7 +39,7 @@
 		color: #6d6d6d;
 		font-size: 1.6rem;
 		line-height: 1.4;
-		margin: -3rem 0 4rem 0;
+		margin: -(1.5 * $base-margin) 0 (2 * $base-margin) 0;
 		text-align: center;
 
 		a {
@@ -55,7 +55,7 @@
 
 	p {
 		line-height: 1.1;
-		margin-bottom: 2rem;
+		margin-bottom: $base-margin;
 		margin-left: auto;
 		margin-right: auto;
 
@@ -126,7 +126,7 @@
 	}
 
 	.comment-respond .comment-form-email {
-		margin-left: 2rem;
+		margin-left: $base-margin;
 	}
 
 	.comment-respond .comment-reply-title small {
@@ -139,11 +139,11 @@
 	.comment-respond .comment-reply-title {
 		font-size: 5.6rem;
 		line-height: 1.2;
-		margin-bottom: 6rem;
+		margin-bottom: (3 * $base-margin);
 	}
 
 	.comment-respond p.comment-notes,
 	.comment-respond p.logged-in-as {
-		margin: -4rem 0 6rem 0;
+		margin: -(2 * $base-margin) 0 (3 * $base-margin) 0;
 	}
 }

@@ -199,7 +199,7 @@
 
 		a {
 			display: block;
-			padding: 2rem 2.5rem;
+			padding: $base-margin 2.5rem;
 			text-decoration: none;
 			width: 100%;
 		}
@@ -218,7 +218,7 @@
 
 	@at-root .menu-bottom {
 		flex-shrink: 0;
-		padding: 4rem 0;
+		padding: (2 * $base-margin) 0;
 
 		nav {
 			width: 100%;
@@ -290,7 +290,7 @@ button{
 
 	button.close-nav-toggle {
 		font-size: 1.8rem;
-		padding: 4rem 0;
+		padding: (2 * $base-margin) 0;
 	}
 
 	button.close-nav-toggle svg {
@@ -318,7 +318,7 @@ button{
 	}
 
 	.modal-menu > li > .ancestor-wrapper > button.sub-menu-toggle {
-		padding: 0 3rem;
+		padding: 0 (1.5 * $base-margin);
 	}
 
 	.modal-menu > li > .ancestor-wrapper > button.sub-menu-toggle svg {
@@ -336,7 +336,7 @@ button{
 	.menu-copyright {
 		display: block;
 		flex-shrink: 0;
-		margin-right: 4rem;
+		margin-right: (2 * $base-margin);
 	}
 }
 
@@ -358,7 +358,7 @@ button{
 	}
 
 	.menu-wrapper.section-inner {
-		width: calc(100% - 8rem);
+		width: calc(100% - #{(4 * $base-margin)});
 	}
 
 	.menu-modal-inner {
@@ -385,7 +385,7 @@ button{
 	}
 
 	.menu-bottom {
-		padding: 6rem 0;
+		padding: (3 * $base-margin) 0;
 	}
 
 	.menu-bottom .social-menu {

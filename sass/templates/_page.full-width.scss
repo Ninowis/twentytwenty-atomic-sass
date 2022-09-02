@@ -40,7 +40,7 @@ body.template-full-width {
 	[class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .wp-block-image .alignleft {
 
 		/*rtl:ignore*/
-		margin-left: 2rem;
+		margin-left: $base-margin;
 		position: static;
 	}
 
@@ -60,7 +60,7 @@ body.template-full-width {
 	[class*="wp-block"].alignfull:not(.has-background) [class*="__inner-container"] > .wp-block-image .alignright {
 
 		/*rtl:ignore*/
-		margin-right: 2rem;
+		margin-right: $base-margin;
 		position: static;
 	}
 }
@@ -68,12 +68,12 @@ body.template-full-width {
 @media ( min-width: $small ) {
 
 	body.template-full-width .entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-		width: calc(100% - 8rem);
+		width: calc(100% - #{(4 * $base-margin)});
 	}
 
 	body.template-full-width .alignfull:not(.has-background) > .wp-block-group__inner-container > p:not(.has-background-color) {
-		padding-left: 4rem;
-		padding-right: 4rem;
+		padding-left: (2 * $base-margin);
+		padding-right: (2 * $base-margin);
 	}
 
 	body.template-full-width [class*="wp-block"].alignfull [class*="__inner-container"] > .alignleft,
@@ -81,7 +81,7 @@ body.template-full-width {
 	body.template-full-width [class*="wp-block"].alignfull [class*="__inner-container"] > .wp-block-image .alignleft {
 
 		/*rtl:ignore*/
-		margin-left: 4rem;
+		margin-left: (2 * $base-margin);
 	}
 
 	body.template-full-width [class*="wp-block"].alignfull [class*="__inner-container"] > .alignright,
@@ -89,19 +89,19 @@ body.template-full-width {
 	body.template-full-width [class*="wp-block"].alignfull [class*="__inner-container"] > .wp-block-image .alignright {
 
 		/*rtl:ignore*/
-		margin-right: 4rem;
+		margin-right: (2 * $base-margin);
 	}
 }
 
 @media ( min-width: $desktop-nav ) {
 	.template-full-width .wp-block-image .alignleft {
 		/*rtl:ignore*/
-		margin-right: 2rem;
+		margin-right: $base-margin;
 	}
 
 	.template-full-width .wp-block-image .alignright {
 		/*rtl:ignore*/
-		margin-left: 2rem;
+		margin-left: $base-margin;
 	}
 }
 

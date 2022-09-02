@@ -90,7 +90,7 @@
 		margin: 0.8rem 0 0 1.6rem;
 
 		&.menu-item-has-children > a {
-			padding-right: 2rem;
+			padding-right: $base-margin;
 		}
 
 		> .icon {
@@ -111,7 +111,7 @@
 		padding: 1rem 0;
 		position: absolute;
 		right: 9999rem;
-		top: calc(100% + 2rem);
+		top: calc(100% + #{$base-margin});
 		transition: opacity 0.15s linear, transform 0.15s linear, right 0s 0.15s;
 		transform: translateY(0.6rem);
 		width: 20rem;
@@ -126,7 +126,7 @@
 		}
 
 		&::before {
-			height: 2rem;
+			height: $base-margin;
 			left: 0;
 			right: 0;
 		}
@@ -142,7 +142,7 @@
 			border: none;
 			color: inherit;
 			display: block;
-			padding: 1rem 2rem;
+			padding: ($base-margin / 2) $base-margin;
 			transition: background-color 0.15s linear;
 			width: 100%;
 		}
@@ -167,9 +167,9 @@
 				bottom: 0;
 				height: auto;
 				left: auto;
-				right: -2rem;
+				right: -$base-margin;
 				top: 0;
-				width: 2rem;
+				width: $base-margin;
 			}
 
 			&::after {
@@ -179,7 +179,7 @@
 				border-left-color: #000;
 				bottom: auto;
 				right: -1.6rem;
-				top: 2rem;
+				top: $base-margin;
 
 				@at-root .rtl & {
 					transform: rotate(180deg);
@@ -206,7 +206,7 @@
 		&:focus,
 		&.focus {
 			> ul {
-				right: calc(100% + 2rem);
+				right: calc(100% + #{$base-margin});
 			}
 		}
 	}
@@ -220,7 +220,7 @@
 
 		> li.menu-item-has-children > a {
 			padding-right: 0;
-			margin-right: 2rem;
+			margin-right: $base-margin;
 		}
 
 		ul li.menu-item-has-children > a {
@@ -235,7 +235,7 @@
 
 		> li.menu-item-has-children > a {
 			padding-right: 0;
-			margin-right: 2rem;
+			margin-right: $base-margin;
 		}
 
 		ul li.menu-item-has-children > a {

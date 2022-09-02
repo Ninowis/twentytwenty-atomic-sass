@@ -10,6 +10,6 @@
 
 @media ( min-width: $small ) {
 	.no-search-results-form {
-		padding-top: 8rem;
+		padding-top: (4 * $base-margin);
 	}
 }

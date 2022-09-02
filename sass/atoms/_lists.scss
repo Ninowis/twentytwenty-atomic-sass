@@ -1,7 +1,7 @@
 
 ul,
 ol {
-	margin: 0 0 3rem 3rem;
+	margin: 0 0 (1.5 * $base-margin) (1.5 * $base-margin);
 }
 
 ul {
@@ -30,11 +30,11 @@ ol {
 
 li {
 	line-height: 1.5;
-	margin: 0.5rem 0 0 2rem;
+	margin: 0.5rem 0 0 $base-margin;
 
 	> ul,
 	> ol {
-		margin: 1rem 0 0 2rem;
+		margin: 1rem 0 0 $base-margin;
 	}
 }
 
@@ -71,7 +71,7 @@ dd + dt {
 @media ( max-width: ($xsmall - 1px) ) {
 	ul,
 	ol {
-		margin: 0 0 3rem 2rem;
+		margin: 0 0 (1.5 * $base-margin) $base-margin;
 	}
 
 	li {
@@ -82,6 +82,6 @@ dd + dt {
 @media ( min-width: $small ) {
 	ul,
 	ol {
-		margin-bottom: 4rem;
+		margin-bottom: (2 * $base-margin);
 	}
 }

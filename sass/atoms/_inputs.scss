@@ -1,7 +1,7 @@
 
 fieldset {
 	border: 0.2rem solid #dcd7ca;
-	padding: 2rem;
+	padding: $base-margin;
 }
 
 legend {
@@ -208,7 +208,7 @@ input[type="submit"] {
 
 @media ( min-width: $small ) {
 	fieldset {
-		padding: 3rem;
+		padding: (1.5 * $base-margin);
 	}
 
 	legend {

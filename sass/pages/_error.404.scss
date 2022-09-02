@@ -10,17 +10,17 @@
 	}
 
 	#site-content {
-		padding-top: 4rem;
+		padding-top: (2 * $base-margin);
 
 		.search-form {
 			justify-content: center;
-			margin-top: 3rem;
+			margin-top: (1.5 * $base-margin);
 		}
 	}
 }
 
 @media ( min-width: $small ) {
 	.error404 #site-content {
-		padding-top: 8rem;
+		padding-top: (4 * $base-margin);
 	}
 }

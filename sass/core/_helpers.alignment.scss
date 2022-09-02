@@ -13,9 +13,9 @@
 .alignleft,
 .alignright,
 .alignwide {
-	margin-top: 4rem;
+	margin-top: (2 * $base-margin);
 	margin-right: auto;
-	margin-bottom: 4rem;
+	margin-bottom: (2 * $base-margin);
 	margin-left: auto;
 }
 
@@ -50,7 +50,7 @@
 .alignwide {
 	max-width: $large-max-width;
 	position: relative;
-	width: calc(100% - 4rem);
+	width: calc(100% - #{(2 * $base-margin)});
 }
 
 [class*="__inner-container"] > .alignwide {
@@ -75,13 +75,13 @@
 .alignleft {
 	/*rtl:ignore*/
 	float: left;
-	margin: 0.3rem 2rem 2rem 2rem;
+	margin: 0.3rem $base-margin $base-margin $base-margin;
 }
 
 .alignright {
 	/*rtl:ignore*/
 	float: right;
-	margin: 0.3rem 2rem 2rem 2rem;
+	margin: 0.3rem $base-margin $base-margin $base-margin;
 }
 
 @media ( min-width: $xsmall ) {
@@ -94,17 +94,17 @@
 @media ( min-width: $small ) {
 	.alignnone,
 	.aligncenter {
-		margin-bottom: 4rem;
-		margin-top: 4rem;
+		margin-bottom: (2 * $base-margin);
+		margin-top: (2 * $base-margin);
 	}
 
 	.alignleft {
 		/*rtl:ignore*/
-		margin: 0.3rem 2rem 2rem 0;
+		margin: 0.3rem $base-margin $base-margin 0;
 	}
 
 	.alignright {
 		/*rtl:ignore*/
-		margin: 0.3rem 0 2rem 2rem;
+		margin: 0.3rem 0 $base-margin $base-margin;
 	}
 }
