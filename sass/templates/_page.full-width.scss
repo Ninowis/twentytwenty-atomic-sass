@@ -12,7 +12,7 @@ body.template-full-width {
 	.entry-content ,
 	[class*="__inner-container"] {
 		> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-			max-width: 120rem;
+			max-width: $large-max-width;
 		}
 	}
 
@@ -108,12 +108,12 @@ body.template-full-width {
 @media ( min-width: ($large - 40px) ) {
 	body.template-full-width .entry-content > .alignleft {
 		/*rtl:ignore*/
-		margin-left: calc(( 100vw - 120rem ) / 2);
+		margin-left: calc(( 100vw - #{$large-max-width} ) / 2);
 	}
 
 	body.template-full-width .entry-content > .alignright {
 		/*rtl:ignore*/
-		margin-right: calc(( 100vw - 120rem ) / 2);
+		margin-right: calc(( 100vw - #{$large-max-width} ) / 2);
 	}
 }
 

@@ -83,7 +83,7 @@
 	// Alignment Classes
 
 	> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-		max-width: 58rem;
+		max-width: $medium-max-width;
 		width: calc(100% - 4rem);
 	}
 }
@@ -256,12 +256,12 @@
 	}
 
 	.entry-content > .alignwide {
-		max-width: 120rem;
-		width: 120rem;
+		max-width: $large-max-width;
+		width: $large-max-width;
 	}
 
 	[class*="__inner-container"] > .alignwide {
-		max-width: 120rem;
+		max-width: $large-max-width;
 		width: 100%;
 	}
 

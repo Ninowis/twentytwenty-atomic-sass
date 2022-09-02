@@ -60,7 +60,7 @@
 		margin-right: auto;
 
 		&:not(.comment-notes) {
-			max-width: 58rem;
+			max-width: $medium-max-width;
 		}
 	}
 
