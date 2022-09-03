@@ -2,3 +2,4 @@
 .phpcs.xml
 phpcs.xml
 /node_modules
+package-lock.json
