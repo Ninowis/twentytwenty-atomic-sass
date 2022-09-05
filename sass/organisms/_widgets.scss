@@ -57,7 +57,7 @@
 
 	.post-date,
 	.rss-date {
-		color: #6d6d6d;
+		color: $secondary-color;
 		display: block;
 		font-size: 0.85em;
 		font-weight: 500;
@@ -114,7 +114,7 @@
 	&_meta,
 	&_nav_menu {
 		li {
-			color: #6d6d6d;
+			color: $secondary-color;
 			margin: 0.3rem 0;
 
 			li {

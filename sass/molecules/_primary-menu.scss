@@ -103,7 +103,7 @@
 	// SUB MENU
 
 	ul {
-		background: #000;
+		background: $primary-color;
 		border-radius: 0.4rem;
 		color: #fff;
 		font-size: 1.7rem;
@@ -133,7 +133,7 @@
 
 		&::after {
 			border: 0.8rem solid transparent;
-			border-bottom-color: #000;
+			border-bottom-color: $primary-color;
 			right: 1.8rem;
 		}
 
@@ -176,7 +176,7 @@
 				border-bottom-color: transparent;
 
 				/*rtl:ignore*/
-				border-left-color: #000;
+				border-left-color: $primary-color;
 				bottom: auto;
 				right: -1.6rem;
 				top: $base-margin;

@@ -4,7 +4,7 @@
 	&,
 	&-hover:focus,
 	&-hover:hover {
-		color: #cd2653;
+		color: $accent-color;
 	}
 }
 
@@ -13,7 +13,7 @@
 	&,
 	&-hover:focus,
 	&-hover:hover {
-		background-color: #cd2653;
+		background-color: $accent-color;
 	}
 }
 
@@ -22,7 +22,7 @@
 	&,
 	&-hover:focus,
 	&-hover:hover {
-		border-color: #cd2653;
+		border-color: $accent-color;
 	}
 }
 
@@ -30,7 +30,7 @@
 .fill-children-accent {
 	&,
 	* {
-		fill: #cd2653;
+		fill: $accent-color;
 	}
 }
 .fill-children-current-color {
@@ -124,19 +124,19 @@
 	&-exclusion {
 		mix-blend-mode: exclusion;
 	}
-	
+
 	&-hue {
 		mix-blend-mode: hue;
 	}
-	
+
 	&-saturation {
 		mix-blend-mode: saturation;
 	}
-	
+
 	&-color {
 		mix-blend-mode: color;
 	}
-	
+
 	&-luminosity {
 		mix-blend-mode: luminosity;
 	}

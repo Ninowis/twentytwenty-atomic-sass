@@ -16,7 +16,7 @@ samp {
 }
 
 pre {
-	border: 0.1rem solid #dcd7ca;
+	border: 0.1rem solid $subtle-color;
 	line-height: 1.5;
 	margin: (2 * $base-margin) 0;
 	overflow: auto;

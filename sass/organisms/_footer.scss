@@ -81,7 +81,7 @@
 		}
 
 		a {
-			background-color: #cd2653;
+			background-color: $accent-color;
 			height: 3.6rem;
 			width: 3.6rem;
 
@@ -136,11 +136,11 @@
 		.powered-by-wordpress {
 			display: none;
 			margin: 0 0 0 2.4rem;
-			color: #6d6d6d;
+			color: $secondary-color;
 		}
 
 		.to-the-top {
-			color: #6d6d6d;
+			color: $secondary-color;
 
 			@at-root a#{&} > * {
 				pointer-events: none;
