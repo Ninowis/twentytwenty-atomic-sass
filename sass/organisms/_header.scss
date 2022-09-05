@@ -8,7 +8,7 @@
 		molecules/toggle
  */
 #site-header {
-	background: #fff;
+	background: $header-footer-background-color;
 	position: relative;
 
 	@at-root .header-inner {

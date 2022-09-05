@@ -10,7 +10,7 @@
  */
 
 .menu-modal {
-	background: #fff;
+	background: $header-footer-background-color;
 	display: none;
 	opacity: 0;
 	overflow-y: auto;
@@ -43,7 +43,7 @@
 	}
 
 	&-inner {
-		background: #fff;
+		background: $header-footer-background-color;
 		display: flex;
 		justify-content: stretch;
 		overflow: auto;

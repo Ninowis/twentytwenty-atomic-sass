@@ -29,7 +29,7 @@
 	}
 
 	&-inner {
-		background: #fff;
+		background: $header-footer-background-color;
 		transform: translateY(-100%);
 		transition: transform 0.15s linear, box-shadow 0.15s linear;
 
