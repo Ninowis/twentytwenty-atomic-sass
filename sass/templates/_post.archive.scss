@@ -9,7 +9,7 @@
 .archive {
 
 	&-header {
-		background-color: #fff;
+		background-color: $header-footer-background-color;
 		padding: (2 * $base-margin) 0;
 
 		@at-root .reduced-spacing & {

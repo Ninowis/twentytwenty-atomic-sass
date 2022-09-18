@@ -10,7 +10,7 @@
 
 .singular {
 	.entry-header {
-		background-color: #fff;
+		background-color: $header-footer-background-color;
 		padding: (2 * $base-margin) 0;
 	}
 
@@ -24,7 +24,7 @@
 		}
 
 		&::before {
-			background: #fff;
+			background: $header-footer-background-color;
 			content: "";
 			display: block;
 			position: absolute;
