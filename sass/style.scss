@@ -24,6 +24,7 @@ with others.
 @import "config/variables.breakpoints";
 @import "config/variables.layout";
 @import "config/variables.colours";
+@import "config/variables.typography";
 
 @import "core/reset";
 @import "core/document";
@@ -32,6 +33,8 @@ with others.
 @import "core/helpers.alignment";
 @import "core/helpers.backgrounds";
 @import "core/helpers.colours";
+@import "core/helpers.colours.blocks";
+@import "core/helpers.colours.custom";
 @import "core/helpers.javascript";
 @import "core/helpers.layout";
 @import "core/helpers.typography";

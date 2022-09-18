@@ -1,0 +1,46 @@
+/* CUSTOM COLORS */
+
+:root .has-accent-color {
+	color: $accent-color;
+}
+
+:root .has-accent-background-color {
+	background-color: $accent-color;
+	color: #fff;
+}
+
+:root .has-primary-color {
+	color: $primary-color;
+}
+
+:root .has-primary-background-color {
+	background-color: $primary-color;
+	color: $background-color;
+}
+
+:root .has-secondary-color {
+	color: $secondary-color;
+}
+
+:root .has-secondary-background-color {
+	background-color: $secondary-color;
+	color: #fff;
+}
+
+:root .has-subtle-background-color {
+	color: $subtle-color;
+}
+
+:root .has-subtle-background-background-color {
+	background-color: $subtle-color;
+	color: $primary-color;
+}
+
+:root .has-background-color {
+	color: $background-color;
+}
+
+:root .has-background-background-color {
+	background-color: $background-color;
+	color: $primary-color;
+}

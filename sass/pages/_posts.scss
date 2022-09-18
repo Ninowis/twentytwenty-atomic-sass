@@ -6,4 +6,8 @@
 
 body:not(.singular) main > article:first-of-type {
 	padding: (2 * $base-margin) 0 0;
+
+	@media ( min-width: $small ) {
+		padding: (4 * $base-margin) 0 0;
+	}
 }
