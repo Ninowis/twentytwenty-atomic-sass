@@ -1,0 +1,24 @@
+/**
+ * Remove the unit of a length
+ * @param {Number} $number - Number to remove unit from
+ * @return {Number} - Unitless number
+ */
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+/**
+ * Return a pixels value from rem
+ * @param {String} $val Rem value
+ * @returns {pxValue} Returns the px value of the rem passed in
+ */
+@function remToPx($val) {
+  $remval: strip-unit($val);
+  $base: 10; // as defined by the 62,5% font-size in core/_document.scss
+
+  @return $remval * $base * 1px;
+}

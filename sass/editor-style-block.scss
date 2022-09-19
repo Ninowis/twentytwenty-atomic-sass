@@ -1,0 +1,31 @@
+/**
+ * This is an alternative solution to the one provided in the original TwentyTwenty theme
+ * favorising the re-use of partials defined for the them instead of another set of styles to maintin
+ */
+
+@import "config/functions";
+@import "config/variables.breakpoints";
+@import "config/variables.layout";
+@import "config/variables.colours";
+@import "config/variables.typography.editor";
+
+@import "core/document.editor.block";
+@import "core/fonts";
+@import "core/helpers.alignment.editor";
+@import "core/helpers.colours.custom";
+@import "core/helpers.colours.editor";
+
+.editor-styles-wrapper {
+	@import "core/editor.tinymce";
+
+	@import "atoms/typography";
+	@import "atoms/lists";
+	@import "atoms/quotes";
+	@import "atoms/code";
+	@import "atoms/media";
+	@import "atoms/inputs";
+	@import "atoms/tables";
+	@import "atoms/sections";
+
+	@import "molecules/blocks";
+}
